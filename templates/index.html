@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Emails</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classificação de Emails</h1>
+
+        <form  id="chat">
+
+
+            <label>Ou insira o texto do email:</label>
+            <textarea id="textInput" rows="6" placeholder="Cole o texto aqui..."></textarea>
+
+            <button id="botao-enviar"  disabled type="submit">Processar Email</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <h2>Resultado:</h2>
+            <p><strong>Categoria:</strong> <span id="categoria"></span></p>
+            <p><strong>Resposta Sugerida:</strong> <span id="resposta"></span></p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
