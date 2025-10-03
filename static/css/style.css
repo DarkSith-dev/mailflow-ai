@@ -54,3 +54,10 @@ button:hover {
     background: #e9ecef;
     border-radius: 5px;
 }
+
+.chat__bolha.chat__bolha--bot {
+    display: none !important;
+}
+.chat__bolha.chat__bolha--usuario {
+    display: none !important;
+}
