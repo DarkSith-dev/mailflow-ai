@@ -2,9 +2,18 @@ import selecionar_persona
 from gerenciar_arquivo import gerar_arquivo_gemini
 from selecionar_persona import personas
 from flask import Flask, jsonify,render_template, request
+
+app = Flask(__name__)
+
 import google.generativeai as genai
 from dotenv import load_dotenv
 import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+
+
 from time import sleep
 import uuid
 
